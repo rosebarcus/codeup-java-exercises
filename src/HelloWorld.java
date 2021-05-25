@@ -44,11 +44,11 @@ public class HelloWorld {
 
         /*incompatible variable types*/
 
-        int x = 4 + 5;
+       /* int x = 4 + 5;
         System.out.println(x);
 
         int x = 3 + y = 4;
-
+*/
 
 
 /*TODO please take a break and come back to review this entire exercise after rereading the curriculum*/
