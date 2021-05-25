@@ -1,10 +1,11 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        int j = 0;
+        int j = 100;
         do {
-            System.out.println(j * 2);
-            j++;
+            if (j % 5 ==0){
+                System.out.println(j + "\n");
 
-        } while (j <= 50);
-    }
-}
+            }
+            j--;
+    } while (j >= -10 && j < 100);
+} }
