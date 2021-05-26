@@ -1,9 +1,14 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
+        int i = 5;
+        while (i <= 15) {
+            if (i < 15) {
+                System.out.print(i + " ");
+            } else {
+                System.out.println(i);
+            }
+            i++;
+        }
 
-       for (int j = 2; j < 1000000; j += j){
-           System.out.println(j*2);
-       }
-
-
-} }
+    }
+}
