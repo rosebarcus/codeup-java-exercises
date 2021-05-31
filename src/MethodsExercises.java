@@ -109,10 +109,10 @@ public class MethodsExercises {
         System.out.println(divide(29,3));
         System.out.println(modulus(100,100));
         System.out.println(loopMultiply(3, 4));
-       /* System.out.println(multiplyRecursion(3, 5));
+        System.out.println(multiplyRecursion(3, 5));
         int userInput = getInteger(20, 30);
         System.out.println(Factorial());
-*/
+
 
     }
 }
