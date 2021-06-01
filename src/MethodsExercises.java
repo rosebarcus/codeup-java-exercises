@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class MethodsExercises {
 
@@ -91,10 +91,10 @@ public class MethodsExercises {
         Scanner scanny = new Scanner(System.in);
         int numberOfSides = scanny.nextInt();
         System.out.println("Would you like to roll the dice? (y/n)");
-        int userPromptAnswer = scanny.nextLine();
+     *//*   String userPromptAnswer = scanny.nextLine();
         if (userPromptAnswer == y){
             // roll the dice
-        }
+        }*//*
 
 
     }
@@ -115,4 +115,4 @@ public class MethodsExercises {
 
 
     }
-}
+}*/
