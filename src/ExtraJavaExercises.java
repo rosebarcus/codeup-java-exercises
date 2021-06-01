@@ -3,7 +3,12 @@ import java.util.Scanner;
 public class ExtraJavaExercises {
     public static void main(String[] args) {
 
-            int i,n=0,s=0;
+       String hello = 2;
+
+        System.out.println(hello);
+
+
+           /* int i,n=0,s=0;
             double avg;
             {
 
@@ -19,7 +24,7 @@ public class ExtraJavaExercises {
                 s +=n;
             }
             avg=s/10;
-            System.out.println("The sum of 10 no is : " +s+"\nThe Average is : " +avg);
+            System.out.println("The sum of 10 no is : " +s+"\nThe Average is : " +avg);*/
 
         }
 }
