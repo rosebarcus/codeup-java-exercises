@@ -21,6 +21,11 @@ public class Student {
         // returns the average of the students grades
         this.grades.add(grade);
     }
+    //trying to return all of the student's grades
+    public ArrayList<Integer> getGrades() {
+        return grades;
+    }
+
     public double getGradeAverage(){
         double sum = 0;
         for (int grade : this.grades){
@@ -35,6 +40,7 @@ public class Student {
         Marsha.addGrade(100);
         Marsha.addGrade(70);
         System.out.println("Marsha.getGradeAverage() = " + Marsha.getGradeAverage());
+        System.out.println(Marsha.getGrades());
 
     }
 }
