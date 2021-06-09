@@ -52,10 +52,24 @@ public class Input {
     public int getInt(){
         return this.scanner.nextInt();
     }
+    @SuppressWarnings("all")
+    //edit for exception errors
+    //Jay's solution
+    public int getInt(String prompt){
+        System.out.println("\n");
+        try{
+            return Integer.valueOf(getString());
+        } catch(NumberFormatException e){
+            System.out.println("That is not a valid number");
+            return getInt("Please enter a valid number");
+        }
+    }
 
     public double getDouble() {
         return this.scanner.nextDouble();
     }
+
+
 
     public double getDouble(double min, double max) {
         System.out.printf("Enter a number with a decimal between %f and %f:%n", min, max);
