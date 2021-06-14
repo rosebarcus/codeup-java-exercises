@@ -99,10 +99,7 @@ public class CollectionsLecture {
         System.out.println(sq.getArea());
         System.out.println(squares.get('D').getArea());
         squares.replace('E', new Square(15));
-        /*System.out.println(squares.get('E').getArea());*/
-        /*squares.clear();
-        System.out.println(squares.size());
-        System.out.println(squares.isEmpty());*/
+
     }
 
 
