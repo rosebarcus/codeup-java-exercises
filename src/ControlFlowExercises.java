@@ -5,7 +5,7 @@ public class ControlFlowExercises {
 
         Scanner scanner1 = new Scanner(System.in);
         String userChoice = "y";
-        while(!userChoice.equals("n")){
+        while(!userChoice.equals("n")) {
             System.out.println("Enter the student's numerical grade: ");
             byte grade = scanner1.nextByte();
             char letterGrade;
@@ -21,7 +21,7 @@ public class ControlFlowExercises {
                 letterGrade = 'A';
             }
             System.out.println("The letter grade is: " + letterGrade);
-            System.out.println("Would you like to enter another grade? (y/n");
+            System.out.println("Would you like to enter another grade? (y/n)");
         }
 
     }

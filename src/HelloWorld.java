@@ -19,18 +19,18 @@ public class HelloWorld {
         /* that's one way to fix the above issue, not sure of the second */
         System.out.println(myNumberChanged);
 
-  /*      int x = 5;
+        int x = 5;
         System.out.println(x++);
-        System.out.println(x);*/
+        System.out.println(x);
 
-       /* int x = 5;
+     /*   int x = 5;*/
         System.out.println(++x);
-        System.out.println(x);*/
+        System.out.println(x);
 
         /*The above codeblocks use post decrement and pre decrement, I'm not sure exactly why they yield the same
         result*/
 
-      /*  var class = */
+        /*var class = */
 
         /*cannot resolve symbol 'var'*/
 

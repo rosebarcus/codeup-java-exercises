@@ -1,4 +1,4 @@
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class MethodsExercises {
 
@@ -86,7 +86,7 @@ public class MethodsExercises {
 
     }
 
-    public static int rollTheDice(int num) {
+ /*   public static int rollTheDice(int num) {
         System.out.println("Enter a number that represents the number of sides on a die");
         Scanner scanny = new Scanner(System.in);
         int numberOfSides = scanny.nextInt();
@@ -94,7 +94,7 @@ public class MethodsExercises {
         String userPromptAnswer = scanny.nextLine();
         if (userPromptAnswer.equals("y")) {
             // roll the dice
-        }
+        }*/
 
 
     }
@@ -115,4 +115,4 @@ public class MethodsExercises {
 
 
     }
-}*/
+}
