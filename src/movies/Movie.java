@@ -20,9 +20,17 @@ public class Movie {
         this.name = name;
     }
 
+    public String getCategory(){
+        return category;
+    }
+
     public void setCat (String category){
         this.category = category;
     }
 
-    public static Movie[] addMovie(Movie[] movie, String name)
+    public static Movie[] addMovie(Movie[] movie, String nameExt, String categoryExt) {
+        Movie[] newMovieArray = Arrays.copyOf(movie, movie.length +1);
+        newMovieArray[movie.length] = new Movie(nameExt, categoryExt);
+        return newMovieArray;
+    }
 }
