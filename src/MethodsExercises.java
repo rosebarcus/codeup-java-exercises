@@ -1,4 +1,3 @@
-/*
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -87,8 +86,7 @@ public class MethodsExercises {
 
     }
 
- */
-/*   public static int rollTheDice(int num) {
+   public static int rollTheDice(int num) {
         System.out.println("Enter a number that represents the number of sides on a die");
         Scanner scanny = new Scanner(System.in);
         int numberOfSides = scanny.nextInt();
@@ -96,16 +94,13 @@ public class MethodsExercises {
         String userPromptAnswer = scanny.nextLine();
         if (userPromptAnswer.equals("y")) {
             // roll the dice
-        }*//*
+        }
 
 
+
+    return num;
 
     }
-
-
-
-*/
-/*
 
     public static void main(String[] args) {
         System.out.println(Addition(4, 9));
@@ -117,10 +112,5 @@ public class MethodsExercises {
         System.out.println(multiplyRecursion(3, 5));
         int userInput = getInteger(20, 30);
         System.out.println(Factorial());
-*//*
-
-
-
     }
 }
-*/
