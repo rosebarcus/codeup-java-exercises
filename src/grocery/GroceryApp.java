@@ -1,4 +1,3 @@
-/*
 package grocery;
 
 import util.Input;
@@ -25,7 +24,7 @@ public class GroceryApp {
         String itemName = in.getString("Please enter the name of the item:");
         int itemQuantity = in.getInt("Please enter item quantity:");
         float itemPrice = (float) in.getDouble("Please enter individual item price:");
-        in.getString();
+        in.getString("Please enter the name of the item's department:");
         System.out.printf("Please review the following item:%nItem Name: %s%nItem Department: %s%nItem Quantity: %d%nItem Price: $%.2f%nWould you like to add this item to your grocery list?%n", itemName, selectedDepartment, itemQuantity, itemPrice);
         if (in.yesNo()) {
             System.out.println("Item has been saved to list.");
@@ -69,7 +68,7 @@ public class GroceryApp {
             System.out.println("2. View List");
             System.out.println("3. Quit");
             int userResp = in.getInt("Please enter either 1, 2, or 3 into your terminal.",1,3);
-            in.getString();
+            in.getString("Please enter the name of the item's department:");
             switch(userResp) {
                 case 1:
                     addToShoppingList(list, in);
@@ -108,4 +107,4 @@ public class GroceryApp {
         // calling runApp
         runApp(list, new Input());
     }
-}*/
+}

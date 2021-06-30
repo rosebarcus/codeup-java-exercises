@@ -20,7 +20,7 @@ public class MoviesApplication {
                 "5 - view movies in the scifi category\n" +
                 "\n" +
                 "Enter your choice:");
-        int selection = input.getInt();
+        int selection = input.getInt("Please enter either 1, 2, or 3 into your terminal.", 1, 3);
 
         Movie[] newMoviesArray = MoviesArray.findAll();
 
@@ -79,7 +79,7 @@ public class MoviesApplication {
                         "5 - view movies in the scifi category\n" +
                         "\n" +
                         "Enter your choice:");
-                selection = input.getInt();
+                selection = input.getInt("Please enter either 1, 2, or 3 into your terminal.", 1, 3);
             }
 
         }

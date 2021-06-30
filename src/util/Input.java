@@ -9,7 +9,7 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-    public String getString() {
+    public String getString(String s) {
         System.out.println("Please enter a sentence.");
         String userSentence = scanner.nextLine();
         System.out.println("Your sentence is: " + userSentence);
@@ -49,7 +49,7 @@ public class Input {
         }
     }
 
-    public int getInt(){
+    public int getInt(String s, int i, int i1){
         return this.scanner.nextInt();
     }
     @SuppressWarnings("all")
@@ -58,14 +58,14 @@ public class Input {
     public int getInt(String prompt){
         System.out.println("\n");
         try{
-            return Integer.valueOf(getString());
+            return Integer.valueOf(getString("Please enter the name of the item's department:"));
         } catch(NumberFormatException e){
             System.out.println("That is not a valid number");
             return getInt("Please enter a valid number");
         }
     }
 
-    public double getDouble() {
+    public double getDouble(String s) {
         return this.scanner.nextDouble();
     }
 
