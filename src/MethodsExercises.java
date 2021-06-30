@@ -112,5 +112,6 @@ public class MethodsExercises {
         System.out.println(multiplyRecursion(3, 5));
         int userInput = getInteger(20, 30);
         System.out.println(Factorial());
+        System.out.println(rollTheDice(30));
     }
 }
