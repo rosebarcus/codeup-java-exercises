@@ -86,10 +86,12 @@ public class MethodsExercises {
 
     }
 
-   public static int rollTheDice(int num) {
+   public static int rollTheDice(int num, int num2) {
         System.out.println("Enter a number that represents the number of sides on a die");
         Scanner scanny = new Scanner(System.in);
         int numberOfSides = scanny.nextInt();
+        String userResponse = "";
+        if(num2 == 0){
         System.out.println("Would you like to roll the dice? (y/n)");
         String userPromptAnswer = scanny.nextLine();
         if (userPromptAnswer.equals("y")) {
