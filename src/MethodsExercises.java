@@ -92,11 +92,15 @@ public class MethodsExercises {
         int numberOfSides = scanny.nextInt();
         String userResponse = "";
         if(num2 == 0){
-        System.out.println("Would you like to roll the dice? (y/n)");
-        String userPromptAnswer = scanny.nextLine();
-        if (userPromptAnswer.equals("y")) {
-            // roll the dice
+            System.out.printf("Would you like to roll your %d sided dice? %n Reply yes to roll! %n", numberOfSides);
+            userResponse = scanny.next()
         }
+       if (userResponse.equalsIgnoreCase("yes" || num2 == 1){
+           {
+
+           }
+       }
+
 
 
 
