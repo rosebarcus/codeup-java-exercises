@@ -96,8 +96,10 @@ public class MethodsExercises {
             userResponse = scanny.next()
         }
        if (userResponse.equalsIgnoreCase("yes" || num2 == 1){
-           {
-
+        int die1 = randomNum(numberOfSides);
+        int die2 = randomNum(numberOfSides);
+           System.out.println("Rolling the dice...");
+           System.out.printf("Your dice rolled %d and %d, with a total roll of %d.%n", die1, die2, die1 + die2);
            }
        }
 
