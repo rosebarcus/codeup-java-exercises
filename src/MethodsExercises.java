@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class MethodsExercises {
 
-    public static int Addition(int num1, int num2){
+    public static int Addition(int num1, int num2) {
         return num1 + num2;
     }
 
-    public static int Subtraction (int num1, int num2){
+    public static int Subtraction(int num1, int num2) {
         return num1 - num2;
     }
 
@@ -14,28 +14,28 @@ public class MethodsExercises {
         return num1 * num2;
     }
 
-    public static int divide(int num1, int num2){
+    public static int divide(int num1, int num2) {
         return num1 / num2;
     }
 
-    public static int modulus(int num1, int num2){
+    public static int modulus(int num1, int num2) {
         return num1 % num2;
     }
 
-    public static int loopMultiply(int x, int y){
+    public static int loopMultiply(int x, int y) {
         int result = 0;
-        while(x > 0){
+        while (x > 0) {
             result += y;
             x--;
         }
         return result;
     }
 
-    public static int multiplyRecursion(int x, int y){
+    public static int multiplyRecursion(int x, int y) {
         if (x == 0 || y == 0) {
             return 0;
         } else {
-            if (x == 1){
+            if (x == 1) {
                 return y;
             } else {
                 return x + (multiplyRecursion(x, y - 1));
@@ -43,7 +43,7 @@ public class MethodsExercises {
         }
     }
 
-    public static int getInteger(int min, int max){
+    public static int getInteger(int min, int max) {
         System.out.printf("Give me a number between %d and %d:\n", min, max);
         Scanner scanner = new Scanner(System.in);
         int userNumber = scanner.nextInt();
@@ -62,7 +62,7 @@ public class MethodsExercises {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a number between 1 & 10:");
         int userNum = scan.nextInt();
-        while(userNum < 1 || userNum > 10){
+        while (userNum < 1 || userNum > 10) {
             System.out.println("Please enter a number between 1 & 10");
             userNum = scan.nextInt();
         }
@@ -72,12 +72,12 @@ public class MethodsExercises {
             if (i == 1) {
 
                 System.out.println(i + "! " + " = " + i * fact);
-                results = String.valueOf(fact*i);
+                results = String.valueOf(fact * i);
                 fact = fact * i;
 
-            }else{
+            } else {
                 results = results + " X " + String.valueOf(i);
-                System.out.println(i + "! " + " = " + results +" = "+ i*fact);
+                System.out.println(i + "! " + " = " + results + " = " + i * fact);
                 fact = fact * i;
             }
         }
@@ -86,36 +86,50 @@ public class MethodsExercises {
 
     }
 
-   public static int rollTheDice(int num, int num2) {
-        System.out.println("Enter a number that represents the number of sides on a die");
+    public static int randomNum(int num)
+
+    public static int diceCreator(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Create some dice!\nHow many sides would you like your die to have?");
+        int numOfSides = scanner.nextInt();
+        return numOfSides;
+    }
+
+    public static int rollTheDice(int num, int num2) {
         Scanner scanny = new Scanner(System.in);
         int numberOfSides = scanny.nextInt();
         String userResponse = "";
-        if(num2 == 0){
+        if (num2 == 0) {
             System.out.printf("Would you like to roll your %d sided dice? %n Reply yes to roll! %n", numberOfSides);
-            userResponse = scanny.next()
+            userResponse = scanny.next();
         }
-       if (userResponse.equalsIgnoreCase("yes" || num2 == 1){
-        int die1 = randomNum(numberOfSides);
-        int die2 = randomNum(numberOfSides);
-           System.out.println("Rolling the dice...");
-           System.out.printf("Your dice rolled %d and %d, with a total roll of %d.%n", die1, die2, die1 + die2);
-           }
-       }
+        if (userResponse.equalsIgnoreCase("yes" || num2 == 1)) {
+            int die1 = randomNum(numberOfSides);
+            int die2 = randomNum(numberOfSides);
+            System.out.println("Rolling the dice...");
+            System.out.printf("Your dice rolled %d and %d, with a total roll of %d.%n", die1, die2, die1 + die2);
+        }
+        System.out.println("Would you like to roll the dice again?\nReply yes to roll again or no to quit.");
+        userResponse = scanny.next();
+        if (userResponse.equalsIgnoreCase("yes")){
+            rollTheDice(numberOfSides, 1);
+    }
 
 
 
 
     return num;
 
-    }
+}
 
     public static void main(String[] args) {
+        rollTheDice(diceCreator(),0);
+        int userInput = getInteger(1, 10);
         System.out.println(Addition(4, 9));
         System.out.println(Subtraction(15, 7));
         System.out.println(multiply(4, 4));
-        System.out.println(divide(29,3));
-        System.out.println(modulus(100,100));
+        System.out.println(divide(29, 3));
+        System.out.println(modulus(100, 100));
         System.out.println(loopMultiply(3, 4));
         System.out.println(multiplyRecursion(3, 5));
         int userInput = getInteger(20, 30);
