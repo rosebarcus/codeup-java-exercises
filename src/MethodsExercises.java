@@ -86,7 +86,10 @@ public class MethodsExercises {
 
     }
 
-    public static int randomNum(int num)
+    public static int randomNum(int num){
+        int randomInt = (int)(Math.random() * num) + 1;
+        return randomInt;
+    }
 
     public static int diceCreator(){
         Scanner scanner = new Scanner(System.in);
